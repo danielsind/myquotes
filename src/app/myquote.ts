@@ -1,7 +1,9 @@
 export class Myquote {
-    name : string;
-    author: string;
-    words : string;
-    date : Date;
+  constructor (public name : string,
+    public author: string,
+    public words : string,
+    public date : Date,){
+
+    }
 
 }
