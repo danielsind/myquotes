@@ -1,11 +1,11 @@
 <h1>MY QUOTES</h1>
 
-    <div nrFor = 'let newquote of quote;let i = index'>
+    <div *ngFor = 'let newquote of quote;let i = index'>
 
-        <ul>
+        <ol>
             <li>
-                {{newquote.name}}
+                Quote : {{newquote.words}} <hr> Author: {{newquote.author}}
             </li>
-        </ul>
+        </ol>
     </div>
 
