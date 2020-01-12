@@ -1,3 +1,5 @@
+<div class="row">
+<div class="col-sm-6 col-md-6 col-lg-6">
 <h1 class="text-center">QUOTES</h1>
 <ul>
     <div *ngFor = 'let newquote of quote; let i=index'>
@@ -8,5 +10,9 @@
             <app-detail  [newquote]='newquote'></app-detail>
         
     </div>
- </ul>
-
+</ul>
+</div>
+ <div class="col-sm-6 col-md-6 col-lg-6">
+        <app-create (addQuote)="addNewQuote($event)"></app-create>
+</div>
+</div>

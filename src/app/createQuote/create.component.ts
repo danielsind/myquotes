@@ -6,9 +6,13 @@ import {Myquote} from '../myquote';
     templateUrl : 'create.component.html',
 }) 
 export class CreateComponent  implements OnInit {
-    freshQuote = new Myquote ("","","",new Date());
+    newQuote = new Myquote ("","","",new Date());
 
     @Output() addQuote = new EventEmitter<Myquote>();
+
+    submitQuote(){
+        this.addQuote.emit(this.newQuote);
+          }
 
     constructor() { }
 
