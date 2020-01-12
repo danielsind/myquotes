@@ -7,7 +7,12 @@ import {Myquote} from '../myquote'
   styleUrls: ['./quote.component.css']
 })
 export class QuoteComponent implements OnInit {
-  quote:Myquote[] = [{name:'Sarah',author:'Daniel',words:'The Most lethal weapon a human being can make is a team',date:new Date(20/12/2020)}]
+  quote:Myquote[] = [
+    
+    new Myquote('Sarah','Daniel','The Most lethal weapon a human being can make is a team',new Date(20/12/2020)),
+    new Myquote('Daniel','Daniel','Its one thing to go to school to learn is another Expirience is one thing growth is another',new Date(12/1/2020))
+  
+  ]
 
   constructor() { }
 
