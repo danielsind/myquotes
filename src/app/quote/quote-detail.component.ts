@@ -1,10 +1,12 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit,Input} from "@angular/core";
+import {Myquote} from '../myquote';
 
 @Component({
-    selector:'quote-detail',
-    template:'./quote-detail.component.html'
+    selector:'app-detail',
+    templateUrl:'./quote-detail.component.html',
 })
 export class QuoteDetailComponent implements OnInit {
+    @Input()newquote:Myquote;
 
     constructor() { }
 

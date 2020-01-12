@@ -1,11 +1,12 @@
-<h1 class="text-center">MY QUOTES</h1>
-
-    <div *ngFor = 'let newquote of quote;let i = index'>
-
-        <ul>
+<h1 class="text-center">QUOTES</h1>
+<ul>
+    <div *ngFor = 'let newquote of quote; let i=index'>
             <li>
-                Quote : {{newquote.words}} <hr> Author: {{newquote.author}}
+                Quote {{newquote.words}} <hr> Author {{newquote.author}}
             </li>
-        </ul>
+            <button class="rounded-pill" (click)='toggleDetails(i)'>More details..</button>
+            <app-detail  [newquote]='newquote'></app-detail>
+        
     </div>
+ </ul>
 

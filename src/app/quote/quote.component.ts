@@ -10,7 +10,8 @@ export class QuoteComponent implements OnInit {
   quote:Myquote[] = [
     
     new Myquote('Sarah','Daniel','The Most lethal weapon a human being can make is a team',new Date(20/12/2020)),
-    new Myquote('Daniel','Daniel','Its one thing to go to school to learn is another Expirience is one thing growth is another',new Date(12/1/2020))
+    new Myquote('Daniel','Daniel','Its one thing to go to school to learn is another Expirience is one thing growth is another',new Date(12/1/2020)),
+    new Myquote('James','Barrack Obama','Yes We Can',new Date(13/12/2020)),
   
   ]
 
