@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { QuoteComponent } from './quote/quote.component';
 import { CreateComponent } from './createQuote/create.component';
 import { QuoteDetailComponent } from './quote/quote-detail.component';
+import { LikeComponent } from './like.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     QuoteComponent,
     CreateComponent,
-    QuoteDetailComponent
+    QuoteDetailComponent,
+    LikeComponent
   ],
   imports: [
     BrowserModule,
