@@ -9,6 +9,7 @@ This is a project that is about creating quotes where people can upvote and down
 * Then you run the cd  command to now be working inside the project
 ## Known Bugs
 I had problems in placing the upvotes and downvotes
+Placing the highlighter to show the quote with the highest votes
 ## Technologies Used
 Angular CLI,bootstrap,css
 ## CodeBit grade [![codebeat badge](https://codebeat.co/badges/9f06722f-677e-4e59-b9c6-b390ef6b6495)](https://codebeat.co/projects/github-com-danielsind-myquotes-master)
