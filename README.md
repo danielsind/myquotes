@@ -1,5 +1,5 @@
 
-####Quotes
+# myquotes
 #### By **Daniel Sindet**
 ## Description
 This is a project that is about creating quotes where people can upvote and downvote a quote
