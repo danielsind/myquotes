@@ -11,6 +11,8 @@ This is a project that is about creating quotes where people can upvote and down
 I had problems in placing the upvotes and downvotes
 ## Technologies Used
 Angular CLI,bootstrap,css
+## CodeBit grade [![codebeat badge](https://codebeat.co/badges/9f06722f-677e-4e59-b9c6-b390ef6b6495)](https://codebeat.co/projects/github-com-danielsind-myquotes-master)
+
 ## Support and contact details
 Call:0790490682
 ### License
