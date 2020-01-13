@@ -15,7 +15,7 @@ import { LikeComponent } from './like.component';
     QuoteComponent,
     CreateComponent,
     QuoteDetailComponent,
-    LikeComponent
+    LikeComponent,
   ],
   imports: [
     BrowserModule,

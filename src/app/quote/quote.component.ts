@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,Output,EventEmitter } from '@angular/core';
 import {Myquote} from '../myquote'
 
 @Component({
@@ -7,6 +7,8 @@ import {Myquote} from '../myquote'
   styleUrls: ['./quote.component.css']
 })
 export class QuoteComponent implements OnInit {
+
+  @Output() isComplete = new EventEmitter<boolean>();
   quote:Myquote[] = [
     
     new Myquote('Sarah','Daniel','The Most lethal weapon a human being can make is a team',new Date(20/12/2020)),
@@ -22,6 +24,18 @@ export class QuoteComponent implements OnInit {
   }
   toggleDetails(index){
     this.quote[index].showDetails = !this.quote[index].showDetails;
+  }
+  deleteQuote(complete:boolean){
+    this.isComplete.emit(complete);
+  }
+  quoteDeleter(isComplete, index){
+    if (isComplete) {
+      let toDelete = confirm(`Are you sure you want to delete ${this.quote[index].name}?`)
+
+      if (toDelete){
+        this.quote.splice(index,1)
+      }
+    }
   }
 
   constructor() { }
