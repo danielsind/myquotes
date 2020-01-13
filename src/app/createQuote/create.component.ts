@@ -12,11 +12,10 @@ export class CreateComponent  implements OnInit {
 
     submitQuote(){
         this.addQuote.emit(this.newQuote);
+        this.newQuote = new Myquote ("","","",new Date());
           }
-
     constructor() { }
 
     ngOnInit() {
     }
-
 }

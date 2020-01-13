@@ -7,8 +7,7 @@
                 Quote {{newquote.words}} <hr> Author {{newquote.author}}
             </li>
             <button class="rounded-pill" (click)='toggleDetails(i)'>More details..</button>
-            <app-detail  [newquote]='newquote'></app-detail>
-            <app-like></app-like>
+            <app-detail *ngIf='newquote.showDetails'  [newquote]='newquote'></app-detail>
         
     </div>
 </ul>

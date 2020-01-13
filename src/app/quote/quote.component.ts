@@ -16,10 +16,12 @@ export class QuoteComponent implements OnInit {
   ]
 
   addNewQuote(newquote){
-    let newquoteLength = this.quote.length;
     newquote.name = newquote.name;
     newquote.date = new Date(newquote.date)
     this.quote.push(newquote)
+  }
+  toggleDetails(index){
+    this.quote[index].showDetails = !this.quote[index].showDetails;
   }
 
   constructor() { }
