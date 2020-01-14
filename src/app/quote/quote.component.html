@@ -1,10 +1,10 @@
 <div class="row">
 <div class="col-sm-6 col-md-6 col-lg-6">
-<h1 class="text-center">QUOTES</h1>
+<h1 class="text-center card-tilte">QUOTES</h1>
 <ul>
-    <div *ngFor = 'let newquote of quote; let i=index'>
+    <div class="card-body jumbotron" *ngFor = 'let newquote of quote; let i=index'>
             <li>
-                Quote {{newquote.words}} <hr> Author {{newquote.author}}
+                Quote: {{newquote.words}} <hr> Author: {{newquote.author}}
             </li>
             <button class="rounded-pill" (click)='toggleDetails(i)'>More details..</button>
             <app-detail *ngIf='newquote.showDetails'  [newquote]='newquote' (isComplete) = 'quoteDeleter($event,i)'></app-detail>
@@ -12,7 +12,7 @@
     </div>
 </ul>
 </div>
- <div class="col-sm-6 col-md-6 col-lg-6">
-        <app-create (addQuote)="addNewQuote($event)"></app-create>
+ <div class="col-sm-6 col-md-6 col-lg-6 jumbotron">
+        <app-create class="card-body " (addQuote)="addNewQuote($event)"></app-create>
 </div>
 </div>
