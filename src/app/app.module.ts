@@ -9,7 +9,7 @@ import { QuoteComponent } from './quote/quote.component';
 import { CreateComponent } from './createQuote/create.component';
 import { QuoteDetailComponent } from './quote/quote-detail.component';
 import { LikeComponent } from './like.component';
-import { DateCountPipePipe } from './date-count-pipe.pipe';
+import { DateAgoPipe } from './date-count-pipe.pipe';
 
 @NgModule({
   declarations: [
@@ -18,7 +18,7 @@ import { DateCountPipePipe } from './date-count-pipe.pipe';
     CreateComponent,
     QuoteDetailComponent,
     LikeComponent,
-    DateCountPipePipe,
+    DateAgoPipe,
     TimeAgoPipe,
   ],
   imports: [
